@@ -1,38 +1,27 @@
-/*
- * This file is part of htmlMaze	.
- *
- * htmlMaze is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * htmlMaze is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with htmlMaze.  If not, see <https://www.gnu.org/licenses/>.
- */
-
-* {
-  font-family: Arial, sans-serif;
-  text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
-table, tbody, tr, td {
-  text-align: left;
+.maze {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* Adjust grid size as needed */
+    grid-gap: 1px;
+    background-color: #333; /* Maze background color */
 }
 
-#footer {
-  bottom: 25px;
-  left: 25px;
-  position: absolute;
-  right: 25px;
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #fff; /* Path color */
 }
 
-#settings {
-  position: absolute;
-  right: 25px;
-  top: 25px;
+.player {
+    width: 40px;
+    height: 40px;
+    background-color: #f00; /* Player color (red) */
 }
